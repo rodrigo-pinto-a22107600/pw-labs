@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>New York Multimedia</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        #informations {
+            border: 2px solid hsl(0, 100%, 73%);
+            background-color: #dde012;
+        }
+
+        #questions {
+            border: 2px solid #FFA500;
+            background-color: rgb(72, 189, 87);
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="author" content="Rodrigo Pinto">
+    <meta name="description" content="Website about New York">
+    <meta name="keywords" content="New York, New York quizz, New York questions">
+</head>
+
+<body>
+    <header>
+        <h1>New York Quizz</h1>
+        <figure>
+            <img src="images/NewYorkPicture.png" alt="New York">
+            <details>
+                <summary>Description</summary>
+                <figcaption>Fig.1 - New York Central Park, Skylines and Hudson River</figcaption>
+            </details>
+        </figure>
+    </header>
+    <nav id="nav_menu">
+        <p>
+            <a href="index.html"><b>🏡Home</a></b>
+            <a href="local.html"><b>🌎Localization</a></b>
+            <a href="multimedia.html"><b>🎥Multimedia</a></b>
+            <a href="info.html"><b>🛈Information</a></b>
+            <a href="html5-css.html"><b>🖥️HTML5 and CSS</a></b>
+        </p>
+    </nav>
+    <br>
+
+    <main>
+        <section>
+            <h3>Quizz</h3>
+            <p>On this page, you will find a quizz specially designed to test your knowledge about New York City. The
+                aim of the quizz is to evaluate how well you know the city and its history, culture,
+                attractions, and other points of interest. The quizz consists of a series of challenging and fun
+                questions that cover various aspects of the city, from its geography to its top tourist attractions.
+                Fill the Info field below and your answers will be sent to your email address.
+            </p>
+            <p>Make sure to answers the questions in order, all answers must be in the website somewhere. Good Luck!</p>
+        </section>
+        <section>
+            <form method="POST" action="mailto: dclankpt9@gmail.com" enctype="multipart/form-data" id="Questions">
+                <fieldset>
+                    <legend>New York City Quizz</legend>
+                    <fieldset id="informations">
+                        <legend>Info</legend>
+                        <p>Name: <input type="text" name="name" autocomplete="off" size="15" maxlength="25" autofocus>
+                        </p>
+                        <p>Surname: <input type="text" name="surname" size="15" maxlength="25"></p>
+                        <p>Email: <input type="email" name="email" placeholder="example@gmail.com" required> </p>
+                    </fieldset>
+                    <fieldset id="questions">
+                        <legend>Questions</legend>
+                        <p>Q1: What is the name of the largest park in New York City? <input type="text" name="firstQ"
+                                size="10" form="Questions">
+                        </p>
+                        <p>Q2: Which of the following is not a borough of New York City?</p>
+                        <input type="radio" id="Manhattan" name="secondQ" value="Manhattan">
+                        <label for="Manhattan">Manhattan</label><br>
+                        <input type="radio" id="Brooklyn" name="secondQ" value="Brooklyn">
+                        <label for="Brooklyn">Brooklyn</label><br>
+                        <input type="radio" id="Queens" name="secondQ" value="Queens">
+                        <label for="Queens">Queens</label><br>
+                        <input type="radio" id="Boston" name="secondQ" value="Boston">
+                        <label for="Boston">Boston</label>
+                        <p>Q3: Which of the following museums are located in New York City? Select all that apply.</p>
+                        <label>
+                            <input type="checkbox" id="BritishMuseum" name="thirdQ" value="BritishMuseum"> The British
+                            Museum
+                        </label>
+                        <label>
+                            <input type="checkbox" id="NationalMuseum" name="thirdQ" value="NationalMuseum"> The
+                            National Museum of Natural History
+                        </label>
+                        <label>
+                            <input type="checkbox" id="ModernArt" name="thirdQ" value="ModernArt"> The Museum of Modern
+                            Art
+                        </label>
+                        <label>
+                            <input type="checkbox" id="Louvre" name="thirdQ" value="Louvre"> The Louvre
+                        </label>
+                        <label>
+                            <input type="checkbox" id="MET" name="thirdQ" value="MET"> The Metropolitan Museum of Art
+                        </label>
+                        <p>Q4: In what year was New York City founded? Just fill the right year, doesn't matter the day
+                            or month.</p>
+                        <input type="date" id="foundedDate" name="fourthQ" value="foundedDate">
+                        <p>Q5: What is the main color of the New York Knicks basketball team?</p>
+                        <input type="color" id="knicksColor" name="fifthQ">
+                        <p>Q6: Enter the number of boroughs in New York City:</p>
+                        <input type="number" id="boroughsCount" name="sixthQ" min="1" max="10" step="1">
+                        <p>Q7: Enter your guess for the height of the Empire State Building in meters:</p>
+
+
+                        <input type="range" id="empireStateHeight" name="seventhQ" min="0" max="500" step="1" value="0"
+                            oninput="seventhQHeight.value = parseInt(seventhQ.value)">
+                        <output name="seventhQHeight" for="seventhQ"> 0 </output> m
+
+                        <p>Q8: Which of the following are NY basketball teams?</p>
+                        <select name="eighthQ" id="NYbasket" multiple>
+                            <option value="New York Yankees">New York Yankees</option>
+                            <option value="New York Mets">New York Mets</option>
+                            <option value="New York Knicks">New York Knicks</option>
+                            <option value="New York Rangers">New York Rangers</option>
+                            <option value="Brooklyn Nets">Brooklyn Nets</option>
+                            <option value="New York Red Bulls">New York Red Bulls</option>
+                        </select>
+                        <p>Hold down the Ctrl (windows) or Command (Mac) button to select multiple options.</p>
+
+                        <p>Q9: What is the area code for Manhattan in New York City?</p>
+                        <input type="tel" id="ninthQ" pattern="[0-9]{3}"
+                            title="Please enter a valid area code (3 digits)" required>
+
+                        <p>Q10: Which of these famous New York City landmarks was completed first?</p>
+                        <input type="text" list="landmarks" id="tenthQ">
+                        <datalist id="landmarks">
+                            <option value="Statue of Liberty">
+                            <option value="Empire State Building">
+                            <option value="One World Trade Center">
+                            <option value="Chrysler Building">
+                        </datalist>
+
+                        <p>Q11: Identify and click the famous Empire State Building</p>
+                        <input type="image" src="images/question5.png" id="empireState" name="eleventhQ"
+                            alt="Empire State Building picture"><br>
+
+                        <h3>Comments and suggestions:</h3>
+                        <h4>You are welcome to suggest more questions or comment on a unnoticed error.</h4>
+                        <textarea name="comments" id="comments" cols="30" rows="10"></textarea><br><br>
+                        <input type="submit" value="Send Comment or Suggestion">
+
+                    </fieldset>
+                </fieldset>
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <h5>Author: Rodrigo Pinto, Number: 22107600, Universidade Lusófona, 2023</h2>
+    </footer>
+</body>
+
+</html>

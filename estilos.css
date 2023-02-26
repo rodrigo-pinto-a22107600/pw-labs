@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+* {
+    font-family: 'Montserrat Mono', monospace;
+  }
+*  body {
+    background-color: #ADD8E6; 
+    color: #333333; 
+  }
+
+#nav_menu a:link {
+  color: blue;
+}
+#nav_menu a:visited {
+  color: purple;
+}
+#nav_menu a:hover {
+  color: orange;
+}
+#nav_menu a:active {
+  color: red;
+}
+  
+#info_table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 50%;
+}
+  
+  
+  
+  

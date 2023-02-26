@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <title>New York CSS</title>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="utf-8">
+    <meta name="author" content="Rodrigo Pinto">
+    <meta name="description" content="Website about New York">
+    <meta name="keywords" content="New York, New York css">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+
+        }
+        tr:nth-child(even) {
+            background-color: #D6EEEE;
+        }
+        tr:nth-child(odd) {
+            background-color: #53b9b9;
+        }
+        th{
+            background-color: rgb(94, 219, 115);
+        }
+        section::first-line{
+            color: rgb(63, 33, 172);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>New York</h1>
+        <figure>
+            <img src="images/NewYorkPicture.png" alt="New York">
+            <details>
+                <summary>Description</summary>
+                <figcaption>Fig.1 - New York Central Park, Skylines and Hudson River</figcaption>
+            </details>
+        </figure>
+    </header>
+    <nav id="nav_menu">
+        <p>
+            <a href="index.html"><b>🏡Home</a></b>
+            <a href="local.html"><b>🌎Localization</a></b>
+            <a href="multimedia.html"><b>🎥Multimedia</a></b>
+            <a href="info.html"><b>🛈Information</a></b>
+            <a href="quizz.html"><b>📝New York Quizz</a></b>
+        </p>
+    </nav>
+    <br>
+    <main>
+        <h3>HTML5 and CSS</h3>
+        <section>
+            <h4>HTML5</h4>
+            <p>
+                HTML5 is the latest version of the Hypertext Markup Language, which is the standard language used to
+                create
+                web pages and applications on the internet. It is an improvement compared to HTML4(previous version) as
+                it
+                introduces new features and improvements, including support for multimedia, semantic tags, and more.
+            </p>
+            <table style="width:50%">
+                <tr>
+                    <th>HTML5 Semantic Elements</th>
+                    <th>Used</th>
+                    <th>Where was It used</th>
+                </tr>
+                <tr>
+                    <td>Header</td>
+                    <td>🥳</td>
+                    <td>Used in every file to recreate the header of the website</td>
+                </tr>
+                <tr>
+                    <td>Nav</td>
+                    <td>🥳</td>
+                    <td>Used in every file to recreate the navigation menu of the website</td>
+                </tr>
+                <tr>
+                    <td>Main</td>
+                    <td>🥳</td>
+                    <td>Used in every file to define the main content of each page</td>
+                </tr>
+                <tr>
+                    <td>Article</td>
+                    <td>🤬</td>
+                    <td>🫥</td>
+                </tr>
+                <tr>
+                    <td>Section</td>
+                    <td>🥳</td>
+                    <td>Used in every file that has a long main, used to separate the different sections</td>
+                </tr>
+                <tr>
+                    <td>Aside</td>
+                    <td>🤬</td>
+                    <td>🫥</td>
+                </tr>
+                <tr>
+                    <td>Footer</td>
+                    <td>🥳</td>
+                    <td>Used in every file to show information about the author</td>
+                </tr>
+                <tr>
+                    <td>Details</td>
+                    <td>🥳</td>
+                    <td>Used in every file to be able to hide and show the media descriptions</td>
+                </tr>
+                <tr>
+                    <td>Meter</td>
+                    <td>🤬</td>
+                    <td>🫥</td>
+                </tr>
+                <tr>
+                    <td>Progress</td>
+                    <td>🤬</td>
+                    <td>🫥</td>
+                </tr>
+                <tr>
+                    <td>Abbr</td>
+                    <td>🥳</td>
+                    <td>Used to abbreviate e.g. which means example in html5-css file</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>🤬</td>
+                    <td>🫥</td>
+                </tr>
+            </table>
+        </section>
+        <br>
+        <section>
+            <h4>CSS</h4>
+            <p>
+                CSS is a web technology used for controlling the visual appearance and
+                layout of HTML documents. It helps web
+                developers to create more flexible and visually appealing websites. With CSS, designers can specify font
+                styles, colors, spacing, and positioning of HTML elements. Mastery of CSS is crucial for creating
+                engaging and effective user experiences on the web.
+            </p>
+            <table style="width:50%">
+                <tr>
+                    <th>CSS Selectors</th>
+                    <th>Used</th>
+                    <th>Where was It used</th>
+                </tr>
+                <tr>
+                    <td>Universal("*")</td>
+                    <td>🥳</td>
+                    <td>Used in estilos.css file to specify that the font would be used by every text(unless said otherwise in the html file)</td>
+                </tr>
+                <tr>
+                    <td>Type(<abbr title="Example">e.g.</abbr> h1)</td>
+                    <td>🥳</td>
+                    <td>Used in html5-css file to design the tables. Basically it alters all of the appearances of the given type</td>
+                </tr>
+                <tr>
+                    <td>Class(".")</td>
+                    <td>🤬</td>
+                    <td>🫥</td>
+                </tr>
+                <tr>
+                    <td>Id("#")</td>
+                    <td>🥳</td>
+                    <td>Used in all files, for example to build the navigation menu. It styles something with a unique id</td>
+                </tr>
+                <tr>
+                    <td>Attribute("a")</td>
+                    <td>🤬</td>
+                    <td>🫥</td>
+                </tr>
+                <tr>
+                    <td>Pseudo-Class("div:")</td>
+                    <td>🥳</td>
+                    <td>Used in estilos file to style the navigation menu properties, like hovering the link or clicking it</td>
+                </tr>
+                <tr>
+                    <td>Pseudo-Element("p::")</td>
+                    <td>🥳</td>
+                    <td>Used in html5-css file to style the first line of each section, because that would be the title</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h4>Combinators</h4>
+            <table style="width:50%">
+                <tr>
+                    <th>CSS Combinators</th>
+                    <th>Used</th>
+                    <th>Where was It used</th>
+                </tr>
+                <tr>
+                    <td>Descending</td>
+                    <td>🥳</td>
+                    <td>Used in estilos.css file to specify that the font would be used by every text(unless said otherwise in the html file)</td>
+                </tr>
+                <tr>
+                    <td>Child</td>
+                    <td>🥳</td>
+                    <td>Used in html5-css file to design the tables. Basically it alters all of the appearances of the given type</td>
+                </tr>
+                <tr>
+                    <td>Adjacent Sibling</td>
+                    <td>🤬</td>
+                    <td>🫥</td>
+                </tr>
+                <tr>
+                    <td>General Sibling</td>
+                    <td>🥳</td>
+                    <td>Used in all files, for example to build the navigation menu. It styles something with a unique id</td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <h5>Author: Rodrigo Pinto, Number: 22107600, Universidade Lusófona, 2023</h2>
+    </footer>
+
+</body>
+
+</html>
